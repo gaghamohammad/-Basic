@@ -86,7 +86,11 @@ function add (a,b){
       <p>Name: {getname()}</p>
       <p> {age} </p>
       <p>verified: {(verified == true ) ? "yes": "no"}</p>
-      <p>result: {add(20,20)}</p>
+      {/* <p>result: {add(20,20)}</p> */}
+      <p>result add: {add(20,25)}</p>
+      <p>result subtract: {subtract(10,20)}</p>
+      <p>result multiply: {multiply(20,40)}</p>
+      <p>result div: {div(50,20)}</p>
 
 
     </div>
@@ -94,3 +98,22 @@ function add (a,b){
 }
 
 export default App;
+
+function add(a,b) {
+  const result = a+b;
+  return result;
+}
+
+function subtract (a,b){
+  const result = a-b;
+  return result;
+}
+function div (a,b){
+  const result = a/b;
+  return result;
+}
+function multiply (a,b){
+  const result = a*b;
+  return result;
+}
+
