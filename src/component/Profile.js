@@ -1,17 +1,17 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-function profile (){
+function profile ({profile}){
     return(
         <Card style={{ width: '18rem' }} className='col-md-4'>
-<Card.Img variant="top" src="https://avatars.githubusercontent.com/u/185525438?v=4" />
+<Card.Img variant="top" src={profile.img} />
 <Card.Body>
-  <Card.Title>mohammad</Card.Title>
+  <Card.Title>{profile.name}</Card.Title>
   <Card.Text>
-    I am studying in BCA..
+    {profile.desc}
   </Card.Text>
-  <a variant="primary" href='https://github.com/gaghamohammad' target='_blank'>
-  <Button>Open Profile</Button></a>
+  <a variant="primary" href={profile.link} target='blank'>
+  <Button>{profile.btn}</Button></a>
 </Card.Body>
 </Card>
     );

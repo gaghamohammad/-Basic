@@ -6,20 +6,43 @@ import Profile from './component/Profile';
 
 
 function App() {
- 
+  const Profiles =[
+    {
+    name:'mohammad',
+    desc:' I am studying in BCA..',
+    img:'https://avatars.githubusercontent.com/u/185525438?v=4',
+    link:'https://github.com/gaghamohammad',
+    btn:'open profile',
+    },
+    {
+    name:'saad',
+    desc:' I am studying in BCA..',
+    img:'https://avatars.githubusercontent.com/u/185525438?v=4',
+    link:'https://github.com/gaghamohammad',
+    btn:'open profile',
+    },
+    {
+    name:'prince',
+    desc:' I am studying in BCA..',
+    img:'https://avatars.githubusercontent.com/u/185525438?v=4',
+    link:'https://github.com/gaghamohammad',
+    btn:'open profile',
+    },
+    
+    
+    
+  ]
  
   return (
     <div className ='container'>
       <h1>basic App</h1>
       <div className='row'>
-      <Profile name='mohammad' location='mumbra'/>
-      {/* <Profile name='mohammad' location='mumbra'/>
-      <Profile name='mohammad' location='mumbra'/>
-      <Profile name='mohammad' location='mumbra'/> */}
+      {/* <Profile />   */}
+
+      
       </div>
       
-      {/* <Btn name='read more'/> */}
-
+      
     </div>
       );
 }
